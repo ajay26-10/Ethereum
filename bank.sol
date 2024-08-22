@@ -12,7 +12,7 @@ contract Bank {
     }
 
     modifier onlyAdmin(){
-        require(admin==msg.sender,"Unauthorized Access!!!");
+        require(msg.sender==admin,"Unauthorized Access!!!");
         _;
     }
 
